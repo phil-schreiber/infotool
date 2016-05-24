@@ -1,6 +1,19 @@
 
-
-
+function range(start, count) {
+        return Array.apply(0, Array(count))
+                    .map(function (element, index) { 
+                             return index + start;  
+                         });
+    } 
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length; i; i -= 1) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+}
 var viewportW = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 var viewportH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 var baseurl;
@@ -15,7 +28,7 @@ function init(jQuery){
 		requireControllerPlugins();
 	}
 	
-	timerInterval=window.setInterval(function(){			
+	/*timerInterval=window.setInterval(function(){			
 		
 		if(time==180){
 			window.location.href='http://agritechnica2015.denkfabrik-group.com/';
@@ -23,7 +36,7 @@ function init(jQuery){
 			time++;
 		}
 		
-	},1000);
+	},1000);*/
 	
 	(function ($, smsTexte, undefined) {
 		smsTexte.berater = function(uid,name){
@@ -362,15 +375,7 @@ function init(jQuery){
 	});
 	
 	
-	jQuery('#q_7_1').change(function() {
-		
-		if(this.checked){
-			jQuery('#q_7_1_b_table').show();
-		}else{
-			jQuery('#q_7_1_b_table').hide();
-		}
-
-	 }); 
+	
 	 
 	 jQuery('.updateDate').change(function(e){
 			
@@ -389,6 +394,91 @@ function smstextBox(){
 	var kunde=new window.smsTexte.kunde(jQuery('input[name="firstname"]').val(),jQuery('input[name="lastname"]').val(),jQuery('input[name="phone"]').val());
 	new smsTexte.createBox(berater,kunde);
 	
+}
+
+
+(function ($, quiz, undefined) {
+		
+		var ptrigger;
+		quiz.user = function(name,email){
+			this.name = name;			
+			this.email = email;
+		};
+		var randomQs=function(elCount){
+                    var qsArr=range(0,elCount);
+                    shuffle(qsArr);
+                    return qsArr.slice(0,9);
+                };
+		var randomAs=function(){
+                    var asArr=range(0,4);
+                    shuffle(asArr);
+                    return asArr;
+                };
+		
+		var insertQ = function(question,index) {
+                        var aArr=randomAs();
+                        var answers='';
+                        var truefalse=0;
+                        aArr.forEach(function(el,ind){
+                            if(question.answers[el].truefalse){
+                                truefalse=1;
+                            }                            
+                            if(ind===0 || ind===2){
+                                answers+='<tr>';
+                            }
+                            answers+='<td><label class="label_'+ind+'"><input type="radio" name="answer_'+index+'[]" value="'+truefalse+'"> '+question.answers[el].title+'</label></td>';
+                            
+                            if(ind===1 || ind===3){
+                               answers+='</tr>';
+                            }
+                        });
+                        console.log(answers);
+			var q='<div class="pt-page pt-page-'+index+'">\
+					<div class="statusbar outer">\
+						<div class="statusbar inner" style="width:'+((index-1)*10)+'%">\
+						</div>\
+					</div>\
+					<form autocomplete="off" class="survey" name="question_'+index+'"><table class="formTable"><thead><tr><th colspan="2"><h3>'+question.title+'</h3></th></tr></thead><tbody>'+answers+'</tbody></table>\
+						<div class="trigger-buttons">\
+							<input type="submit" value="Weiter" data-animation="32" data-goto="'+(index+1)+'" class="pt-trigger navButton">\
+						</div>\
+						<input type="hidden" name="question" value="'+index+'">\
+					</form>\
+				</div>';
+			$(q).insertBefore('#questionThankyou');
+		};
+		
+                
+    
+    
+		var getQuestions=function(callback){
+                    $.getJSON('/agrar-messetool/public/quiz.json',callback);
+                };
+                var writeQuestions=function(data){
+                    
+                    var rQs=randomQs(data.length);
+                      
+                    for(var i=0; i<rQs.length; i++){
+                        insertQ(data[rQs[i]],i+2);
+                    }
+                    jQuery('#surveystartpage').removeClass('pt-page-current');
+                    PageTransitions.init();
+                    PageTransitions.Animate(ptrigger);
+                };
+				
+                
+                
+		quiz.init=function(user,pagetrigger){
+                    ptrigger=pagetrigger;
+                    getQuestions(writeQuestions);
+                };
+	  }(jQuery, window.quiz = window.quiz || {}));
+
+
+
+function quiz(pagetrigger){
+    var user=new window.quiz.user(jQuery('input[name="name"]').val(),jQuery('input[name="email"]').val());
+    new quiz.init(user,pagetrigger);
 }
 function requireControllerPlugins(){
 	
@@ -483,8 +573,8 @@ function letsRoll(){
 	}
 }
 
-function formIsValid(){
-	var fields =['firstname','lastname','phone'];
+function formIsValid(fields){
+	
 	var fieldLength=fields.length;	
 	for(var i=0;i<fieldLength;i++){
 		

@@ -2039,7 +2039,7 @@ li.list-group-item img{
 	border:#e3e3e3 1px dotted;
 	float:left;
 	
-	//width: 20vw;
+	
 	margin: 0 1vw 1vw 0;
 	position:relative;
 	height:22.5vh;
@@ -2235,7 +2235,7 @@ table.formTable table td{
 	width:auto;
 }
 .survey table.formTable td td{
-	//width:15vw;
+
 }
 .survey table#plzTable td{
 	width:auto;
@@ -2506,4 +2506,39 @@ table#report td, table#report th, table#average td, table#average th{
 
 #formTrigger.mandatory {
     color:red;
+}
+.survey td{
+    position:relative;
+}
+.survey label{
+    height:100%;
+    background:#dddddd;
+    display:block;
+    box-sizing:border-box;
+    text-align: center;
+    cursor:pointer;
+    
+}
+.survey label.label_0{
+    background:#dddddd;
+}
+.survey label.label_1{
+    background:#e3e3e3;
+}
+.survey label.label_2{
+    background:#efefef;
+}
+.survey label.label_3{
+    background:#fefefe;
+}
+.survey label:before{
+    content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.survey label:hover{    
+    background:#fff;
+    border:1px solid;
 }

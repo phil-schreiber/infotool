@@ -1,0 +1,710 @@
+[
+    
+        {
+            "title":"Frage 1",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 2",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 3",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 4",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 5",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 6",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 7",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 8",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 9",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 10",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 11",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 12",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 13",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 14",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 15",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 16",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 17",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 18",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 19",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 20",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 21",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 22",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 23",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 24",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 25",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 26",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 27",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 28",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        },
+        {
+            "title":"Frage 29",
+            "answers":[
+                    {
+                        "title":"Answer 1_1",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 1_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 1_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Frage 30",
+            "answers":[
+                    {
+                        "title":"Answer 2_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 2_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 2_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 2"]
+        },
+        {
+            "title":"Frage 31",
+            "answers":[
+                    {
+                        "title":"Answer 3_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_2",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 3_3",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 3_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 3"]
+        },
+        {
+            "title":"Frage 32",
+            "answers":[
+                    {
+                        "title":"Answer 4_1",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Answer 4_3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Answer 4_4",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 4"]
+        }
+    
+]
+    
+

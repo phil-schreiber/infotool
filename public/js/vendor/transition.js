@@ -40,12 +40,12 @@ var PageTransitions = (function () {
 		
         // Adding click event to .pt-trigger
         $('.pt-trigger').click(function(e) {
-			
+			e.preventDefault();
 			jQuery('.virtualKeyboard').animate({
 				right:"-50vw"
 			});
 			if($(this).attr('id')=='formTrigger'){
-				if(formIsValid()){
+				if(formIsValid(['firstname','lastname','phone'])){
 					smstextBox();
 					$pageTrigger = $(this);
 					Animate($pageTrigger);
@@ -56,7 +56,7 @@ var PageTransitions = (function () {
 				}
 			}
 			else if($(this).attr('id')=='formTrigger2'){
-				if(formIsValid()){
+				if(formIsValid(['firstname','lastname','phone'])){
 					$pageTrigger = $(this);
 					var params=jQuery('#contactForm').serialize();
 					//if(termsAgreed()){
@@ -71,7 +71,15 @@ var PageTransitions = (function () {
 				}else{
 					alert('Bitte füllen Sie die vorgegebenen Felder aus');
 				}
-			}else{
+			}else if($(this).attr('id')=='quizTrigger'){
+                            if(formIsValid(['name','email'])){
+                                $pageTrigger = $(this);
+                                quiz($pageTrigger);
+                            }else{
+                                alert('Bitte füllen Sie die vorgegebenen Felder aus');
+                            }
+                            
+                        }else{
 				$pageTrigger = $(this);
 				Animate($pageTrigger);
 			}
@@ -501,7 +509,7 @@ var PageTransitions = (function () {
     }
 
     return {
-		
+	Animate: Animate,
         init : init
     };
 

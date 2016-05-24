@@ -19,8 +19,8 @@ return new \Phalcon\Config(array(
 		'backendViewsDir'       => APP_PATH . '/app/modules/backend/views/',
 		'appsDir' => APP_PATH.'/app/',
         'development'    => array(
-            'staticBaseUri' => '/baywa-messetool/',
-            'baseUri'       => '/baywa-messetool/'
+            'staticBaseUri' => '/agrar-messetool/',
+            'baseUri'       => '/agrar-messetool/'
         ),
         'production'     => array(
             'staticBaseUri' => '/',

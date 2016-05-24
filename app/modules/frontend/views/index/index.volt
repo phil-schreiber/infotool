@@ -17,7 +17,8 @@
 									</div>
 									<div class="back tile1">
 										<!-- back content -->
-										<a href='#list' >
+                                                                                <a href='{{language}}/survey'>
+										
 										<table style="width:100%;height:100%">
 											<tr>											
 												<td style="vertical-align:middle"><p>{{tr('button1')}}</p></td>											  
@@ -57,7 +58,8 @@
 									</div>
 									<div class="back tile4">
 										<!-- back content -->
-										<a href='{{language}}/survey'>
+										
+                                                                                    <a href='#list' >
 										<table style="width:100%;height:100%">
 											<tr>											
 												<td style="vertical-align:middle"><p>{{tr('button3')}}</p></td>											  
@@ -104,51 +106,43 @@
 				<a href="#start" class="navLink">{{image('images/baywa-logo.png', "class":"logo")}}</a>
 			</div>
 			<div class="headerWrap">
-				<h1>{{tr('listHeader')}}</h1>
+				<h1>Sorteninformationen</h1>
 				<h2>{{tr('listHeaderInfo')}}</h2>
 			</div>
 			
 			<div class='clearfix'></div>
-			<div class="legend">
-					<span class="onspot active" style="position:static;display: inline-block"> </span><span>{{tr('listHeader')}}</span>&nbsp;&nbsp;
-					<span class="onspot inactive" style="position:static;display: inline-block"> </span><span>Heute nicht am Stand.</span>
-				</div>
+			
 		</header>
-		
-		<ul class="list-group clearfix">
-		{% for index,feuser in feusers %}
-		
-		<li class='list-group-item {% if feuser.profileid==2 %}	contactable {% endif %}'>
-			{{feuser.available}}
-			<table>
-				<tr>
-					<td>
-						{{image(userImgExists(feuser.image),"class":"userImg")}}
-					</td>
-					<td>
-						<div class='list-group-item-heading'>
-							{{feuser.title}} {{feuser.first_name}} {{feuser.last_name}}<br>
-							{% if feuser.jobtitle %}							
-							{{feuser.jobtitle}}<br>							
-							{% endif %}
-							{% if feuser.division %}
-							{{feuser.division}}
-							{% endif %}
-							{% if feuser.profileid==2 %}
-							<br><span class="contactButton small">SMS senden</span>
-							{% endif %}
-						</div>
-					</td>
-				</tr>
-			</table>
-			<input type="hidden" value="{{feuser.uid}}">
-		</li>
-		{% endfor %}
-		</ul>
+                <div  class="pt-wrapper">
+                <div class="pt-page pt-page-1" id="sortenPage" style="display:block;">
+                    <table class="formTable">
+						<tr>
+                                                    <td><h1>Irgendwas</h1></td>
+                                                </tr>
+                                                <tr>
+							<td >
+								<a data-animation="32" data-goto="2" class="pt-trigger">Nächste Sorte</a>
+							</td>
+						</tr>
+					</table>
+                </div>
+                <div class="pt-page pt-page-2" id="sortenPage" style="display:block;">
+                    <table class="formTable">
+						<tr>
+                                                    <td><h1>Irgendwas anderes</h1></td>
+                                                </tr>
+                                                <tr>
+							<td >
+								<a class="pt-trigger" data-animation="32" data-goto="-2">Zurück</a>
+							</td>
+						</tr>
+					</table>
+                </div>
+                    </div>
 		
 		<br>
 		<div class="clearfix">
-			<a href="#search" class="navButton small"  id="consultantNotFound" style="float:left;"><span class="icon i_right_primary"></span><span class="btn_label">{{tr('consultantNotFound')}}</span></a>
+		
 			<a href="#start" class="navButton small"><span class="icon i_up_primary"></span><span class="btn_label"></span>{{tr('backHome')}}</a>
 		</div>
 		
