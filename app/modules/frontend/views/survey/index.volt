@@ -42,6 +42,7 @@
 						
 						
 					</table>
+                                        		<input type="hidden" name="uniqueId" value="{{uniqueId}}" id="sesid">
                                         </form>
                                     <div class="trigger-buttons">
 						<a href="" class="navButton pt-trigger"   data-animation="32" data-goto="2" id="quizTrigger"><span>Quiz starten</span></a>
@@ -53,7 +54,8 @@
 				<div class="pt-page pt-page-11" id="questionThankyou">
 					<br>
 					<div class="statusbar outer">
-					<h3 style="margin-left">{{tr('thankYou')}}</h3>
+					<h3 style="margin-left">Sie haben <span id="result"></span>% der Fragen richtig beantwortet.</h3>
+                                        
 					</div>
 					<div class="trigger-buttons">
 						<a href="http://agritechnica2015.denkfabrik-group.com/" class="navButton small"  id="consultantNotFound" style="margin-left:30px;float:left;font-size:1.5vw;font-weight:normal">{{tr('backHome')}}</a>

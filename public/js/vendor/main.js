@@ -400,14 +400,28 @@ function smstextBox(){
 (function ($, quiz, undefined) {
 		
 		var ptrigger;
+                var thisuser;
+                var session;
+                
+                var counter=0;
+                var result=0;
+                var sesid=0;
+                quiz.session=function(session){
+                    this.session = session;  
+                };
 		quiz.user = function(name,email){
-			this.name = name;			
-			this.email = email;
+                    this.name = name;			
+                    this.email = email;
 		};
+                
+                
+                var sesidCallback=function(sesuid){
+                  sesid=sesuid;
+                };
 		var randomQs=function(elCount){
-                    var qsArr=range(0,elCount);
+                    var qsArr=range(0,elCount);                    
                     shuffle(qsArr);
-                    return qsArr.slice(0,9);
+                    return qsArr.slice(0,10);
                 };
 		var randomAs=function(){
                     var asArr=range(0,4);
@@ -415,70 +429,100 @@ function smstextBox(){
                     return asArr;
                 };
 		
-		var insertQ = function(question,index) {
+		var insertQ = function(question,index,qid) {
                         var aArr=randomAs();
                         var answers='';
-                        var truefalse=0;
+                        
                         aArr.forEach(function(el,ind){
-                            if(question.answers[el].truefalse){
+                            var truefalse=0;
+                            
+                            if(question.answers[el].truefalse===true){
                                 truefalse=1;
                             }                            
                             if(ind===0 || ind===2){
                                 answers+='<tr>';
                             }
-                            answers+='<td><label class="label_'+ind+'"><input type="radio" name="answer_'+index+'[]" value="'+truefalse+'"> '+question.answers[el].title+'</label></td>';
+                            answers+='<td><label class="label_'+ind+'"><input type="radio" name="answer" value="'+truefalse+'"> '+question.answers[el].title+'</label></td>';
                             
                             if(ind===1 || ind===3){
                                answers+='</tr>';
                             }
                         });
-                        console.log(answers);
-			var q='<div class="pt-page pt-page-'+index+'">\
-					<div class="statusbar outer">\
-						<div class="statusbar inner" style="width:'+((index-1)*10)+'%">\
+                        
+			var q='<div class="pt-page pt-page-'+(index+1)+'">\
+                        <div class="statusbar outer">\
+						<div class="statusbar inner" style="width:'+(index*10)+'%">\
 						</div>\
 					</div>\
-					<form autocomplete="off" class="survey" name="question_'+index+'"><table class="formTable"><thead><tr><th colspan="2"><h3>'+question.title+'</h3></th></tr></thead><tbody>'+answers+'</tbody></table>\
+					<form autocomplete="off" class="survey" name="question_'+index+'">\
+<table class="formTable"><thead><tr><th colspan="2"><h3>'+question.title+'</h3></th></tr></thead><tbody>'+answers+'</tbody></table>\
 						<div class="trigger-buttons">\
-							<input type="submit" value="Weiter" data-animation="32" data-goto="'+(index+1)+'" class="pt-trigger navButton">\
+							<input type="submit" value="Weiter" data-animation="32" data-goto="'+(index+2)+'" class="pt-trigger navButton">\
 						</div>\
-						<input type="hidden" name="question" value="'+index+'">\
+						<input type="hidden" name="question" value="'+qid+'">\
+                                                <input type="hidden" name="questionnumber" value="'+index+'">\
 					</form>\
 				</div>';
 			$(q).insertBefore('#questionThankyou');
 		};
 		
-                
+                var goOn=function(e){
+                  console.log(sesid);
+                  var params=jQuery('form[name="question_'+counter+'"]').serialize();
+                  result+=parseInt(jQuery('form[name="question_'+counter+'"] input:checked').val());
+                  ajaxIt("survey","create",params+'&sesid='+sesid,dummyEmpty);
+                  
+                  if(counter===10){
+                      jQuery('#result').html(result*10);
+                  }
+                };
     
     
 		var getQuestions=function(callback){
                     $.getJSON('/agrar-messetool/public/quiz.json',callback);
                 };
                 var writeQuestions=function(data){
-                    
+                        
                     var rQs=randomQs(data.length);
-                      
+                    
                     for(var i=0; i<rQs.length; i++){
-                        insertQ(data[rQs[i]],i+2);
+                        insertQ(data[rQs[i]],i+1,rQs[i]+1);
                     }
                     jQuery('#surveystartpage').removeClass('pt-page-current');
                     PageTransitions.init();
                     PageTransitions.Animate(ptrigger);
+                    jQuery('.pt-trigger').click(function(e){
+                        counter++;
+                        goOn();
+                    });
                 };
 				
+                var persistUser=function(){       
+                    
+                   var params='name='+thisuser.name+'&email='+thisuser.email+'&uniqueid='+session.session;
+                   ajaxIt("survey","create",params,sesidCallback);
+                   
+                };
                 
                 
-		quiz.init=function(user,pagetrigger){
+                
+		quiz.init=function(sessiondata,pagetrigger){
+                    thisuser=sessiondata.user;
+                    session=sessiondata.session;
                     ptrigger=pagetrigger;
                     getQuestions(writeQuestions);
+                    persistUser();
+                    
                 };
+                
 	  }(jQuery, window.quiz = window.quiz || {}));
 
 
 
 function quiz(pagetrigger){
     var user=new window.quiz.user(jQuery('input[name="name"]').val(),jQuery('input[name="email"]').val());
-    new quiz.init(user,pagetrigger);
+    var session=new window.quiz.session(jQuery('input[name="uniqueId"').val());
+    new quiz.init({user:user,session:session},pagetrigger);
 }
 function requireControllerPlugins(){
 	

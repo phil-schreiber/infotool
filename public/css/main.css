@@ -2087,6 +2087,10 @@ li.list-group-item img{
 	margin-right:auto;
 }
 
+#surveyFormWrapper span{
+    	font-size:1.3vw;
+}
+
 #surveyFormWrapper h3{
 	position:relative;
 	z-index:10;
@@ -2379,7 +2383,7 @@ form .starRating label{
 }
 
 .statusbar.outer{
-
+height:15px;
 	width:100%;
 	position:relative;
 	display:block;
@@ -2389,8 +2393,8 @@ form .starRating label{
 	display:block;
 	background:#01994e;
 	height:15px;
-	position:absolute;
-	top:-25px;
+	/*position:absolute;
+	top:-25px;*/
 }
 
 .onspot{

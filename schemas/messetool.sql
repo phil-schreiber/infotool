@@ -317,6 +317,23 @@ CREATE TABLE IF NOT EXISTS `questions` (
 	KEY `questionnumber` (`questionnumber`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `quiz`;
+CREATE TABLE IF NOT EXISTS `quiz` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT '0',
+  `tstamp` int(11) NOT NULL DEFAULT '0',
+  `crdate` int(11) NOT NULL DEFAULT '0',
+  `cruser_id` int(11) NOT NULL DEFAULT '0',
+  `deleted` tinyint(4) NOT NULL DEFAULT '0',
+  `hidden` tinyint(4) NOT NULL DEFAULT '0',
+  `name` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `session` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `result` varchar(255) COLLATE utf8_general_ci NOT NULL,    
+	PRIMARY KEY (`uid`)
+	
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
 DROP TABLE IF EXISTS `questionitems`;
 CREATE TABLE IF NOT EXISTS `questionitems` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
@@ -326,13 +343,11 @@ CREATE TABLE IF NOT EXISTS `questionitems` (
   `cruser_id` int(11) NOT NULL DEFAULT '0',
   `deleted` tinyint(4) NOT NULL DEFAULT '0',
   `hidden` tinyint(4) NOT NULL DEFAULT '0',
-  `session` varchar(255) COLLATE utf8_general_ci NOT NULL,  
+  `session` int(11) NOT NULL DEFAULT '0',
   `questionnumber` int(11) NOT NULL DEFAULT '0',
   `itemnumber` int(11) NOT NULL DEFAULT '0',
-  `rating` int(11) NOT NULL DEFAULT '0',
-  `checked` tinyint(4) NOT NULL DEFAULT '0',
-  `message` text,
-  `mode` tinyint(4) NOT NULL DEFAULT '0',
+  `answernumber` int(11) NOT NULL DEFAULT '0',
+  `truefalse` tinyint(4) NOT NULL DEFAULT '0',  
 	PRIMARY KEY (`uid`),
 	KEY `questionnumber` (`questionnumber`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;

@@ -1,6 +1,6 @@
 <?php
 namespace messetool\Modules\Modules\Frontend\Controllers;
-use messetool\Models\Questions AS Question;
+use messetool\Models\Quiz AS Quiz;
 use messetool\Models\Questionitems AS Questionitem;
 use messetool\Models\Surveysession AS Surveysession;
 
@@ -45,48 +45,25 @@ class SurveyController extends ControllerBase
 	public function createAction(){
 		$time=time();
 		if($this->request->isPost()){
-			$question=new Question();
-			$question->assign(array(
+                    if($this->request->hasPost('uniqueid')){
+			$quiz=new Quiz();
+			$quiz->assign(array(
 				'pid' => 0,
 				'tstamp' => $time,
 				'crdate' => $time,
 				'cruser_id' => 0,
 				'deleted' => 0,
-				'hidden' => 0,
-				'session' => $this->request->hasPost('uniqueid') ? $this->request->getPost('uniqueid') : '',
-				'questionnumber' => $this->request->hasPost('question') ? $this->request->getPost('question') : 0,
-				'message' => $this->request->hasPost('message') ? $this->request->getPost('message') : ''
+				'hidden' => 0,				
+				'name' => $this->request->hasPost('name') ? $this->request->getPost('name') : 0,
+				'email' => $this->request->hasPost('email') ? $this->request->getPost('email') : '',
+                                'session' => $this->request->hasPost('uniqueid') ? $this->request->getPost('uniqueid') : '',
+                                'result' => ''
 			));
-			$question->save();
-			
-			if($this->request->hasPost('item')){
-				if(is_array($this->request->getPost('item'))){
-					foreach($this->request->getPost('item') as $key => $itemData){
-						
-						$checkitem=new Questionitem();
-						$checkitem->assign(array(
-							'pid' => $question->uid,
-							'tstamp' => $time,
-							'crdate' => $time,
-							'cruser_id' => 0,
-							'deleted' => 0,
-							'hidden' => 0,
-							'session' => $question->session,
-							'questionnumber' => $question->questionnumber,
-							'itemnumber' => $itemData,
-							'checked' => 1,
-							'rating' => 0,
-							'message' => '',
-							'mode' =>0
-
-						));
-						
-						if (!$checkitem->save()) {
-							$this->flash->error($checkitem->getMessages());
-						} 
-					
-					}
-				}else{
+			$quiz->save();
+                        die($quiz->uid);
+                    }
+			if($this->request->hasPost('question')){
+				
 					$radioitem=new Questionitem();
 					$radioitem->assign(array(
 						'pid' => $question->uid,
@@ -95,64 +72,19 @@ class SurveyController extends ControllerBase
 						'cruser_id' => 0,
 						'deleted' => 0,
 						'hidden' => 0,
-						'session' => $question->session,
-						'questionnumber' => $question->questionnumber,
-						'itemnumber' => $this->request->getPost('item'),
-						'checked' => 1,
-						'rating' => 0,
-						'message' => '',
-						'mode' =>1
+						'session' => $this->request->hasPost('sesid') ? $this->request->getPost('sesid') : 0,
+						'questionnumber' => $this->request->hasPost('questionnumber') ? $this->request->getPost('questionnumber') : 0,
+						'itemnumber' => $this->request->hasPost('question') ? $this->request->getPost('question') : 0,
+						'answernumber' => 0,
+						'truefalse' => $this->request->hasPost('answer') ? $this->request->getPost('answer') : 0,
+						
 						
 					));
 					$radioitem->save();
-				}
+				die();
 			}
-			if($this->request->hasPost('openitem')){
-				foreach($this->request->getPost('openitem') as $key => $itemData){
-					$openitem=new Questionitem();
-					$openitem->assign(array(
-						'pid' => $question->uid,
-						'tstamp' => $time,
-						'crdate' => $time,
-						'cruser_id' => 0,
-						'deleted' => 0,
-						'hidden' => 0,
-						'session' => $question->session,
-						'questionnumber' => $question->questionnumber,
-						'itemnumber' => $key,
-						'checked' => 1,
-						'rating' => 0,
-						'message' => $itemData,
-						'mode' =>3
-						
-					));
-					$openitem->save();
-				}
-			}
-			if($this->request->hasPost('rating')){
-				foreach($this->request->getPost('rating') as $key => $itemData){
-					$ratingName='rating_'.$itemData;
-					$ratingitem=new Questionitem();
-					$ratingitem->assign(array(
-						'pid' => $question->uid,
-						'tstamp' => $time,
-						'crdate' => $time,
-						'cruser_id' => 0,
-						'deleted' => 0,
-						'hidden' => 0,
-						'checked' => 0,
-						'session' => $question->session,
-						'questionnumber' => $question->questionnumber,
-						'itemnumber' => $itemData,
-						'rating' => $this->request->hasPost($ratingName) ? $this->request->getPost($ratingName) : 0,
-						'message' => '',
-						'mode' =>2
-						
-					));
-					$ratingitem->save();
-				}
-			}
-			die();
+			
+			
 		}
 	}
 }
