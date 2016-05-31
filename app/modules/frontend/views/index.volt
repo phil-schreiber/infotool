@@ -16,11 +16,13 @@
         
 		
 		
-        {{ stylesheet_link('css/main.css') }}     
+         
 		{{ stylesheet_link('css/transition-animations.css') }}     
 		{{ stylesheet_link('css/jsKeyboard.css') }}     
+                {{ stylesheet_link('css/bootstrap.css') }}     
+                {{ stylesheet_link('css/ekko-lightbox.min.css') }}     
 		{{ assets.outputCss() }}
-		
+	{{ stylesheet_link('css/main.css') }}    	
 		<script data-main="{{ baseurl }}js/vendor/plugins" src="{{ baseurl }}js/require.js"></script>
 		{{ assets.outputJs() }}
 		

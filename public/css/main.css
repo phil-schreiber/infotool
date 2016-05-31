@@ -27,6 +27,12 @@
           box-sizing: border-box;
 		  font-size:1vw;
 }
+a{
+    text-decoration: none;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
 h1{
 	font-size:3vw;
 	color:#01994e;
@@ -1249,10 +1255,12 @@ span.deleteListItem{
 }
 
 table.maintable{
-	min-width:50%;
+	width:100%;
+        height:100%;
 }
 table.maintable td,table.maintable th{
 	padding:10px;
+        vertical-align:top;
 
 }
 table.maintable tr.even td{
@@ -2295,7 +2303,7 @@ table.formTable table td{
 
 /*autocomplete suggestions*/
 .autocomplete-suggestions { overflow: auto;}
-.autocomplete-suggestion {  border: 1px solid #999; background: #FFF;padding: 2px 5px; white-space: nowrap; overflow: hidden; float:left;    margin: 0.1vw;min-height:16vh;}
+/*.autocomplete-suggestion {  border: 1px solid #999; background: #FFF;padding: 2px 5px; white-space: nowrap; overflow: hidden; float:left;    margin: 0.1vw;min-height:16vh;}*/
 .autocomplete-selected { background: #F0F0F0; }
 .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
 .autocomplete-group { padding: 2px 5px; }
@@ -2452,7 +2460,7 @@ height:15px;
 /* RESULT DROPDOWN*/
 #searchResults{
 	overflow-y: scroll;
-	max-height:30vh;
+	/*max-height:30vh;*/
 }
 
 #smsTextsSelect{

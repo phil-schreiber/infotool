@@ -1,710 +1,641 @@
 [
     
         {
-            "title":"Frage 1",
+            "title":"Welche Rapssorte wird die Schwerpunktsorte 2016 im Exklusivsortiment der BayWa?",
             "answers":[
                     {
-                        "title":"Answer 1_1",
+                        "title":"Archipel",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 1_2",
+                        "title":"Vision",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 1_3",
+                        "title":"Planterra",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 1_4",
+                        "title":"Visby",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 2",
+            "title":"Welche neue Rapssorte wird im BayWa Rapskatalog 2016 neu vorgestellt?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Naiad",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Müller 24",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 2"]
-        },
-        {
-            "title":"Frage 3",
-            "answers":[
-                    {
-                        "title":"Answer 3_1",
+                        "title":"Vision",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_2",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 3_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 4",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 5",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"Sepp 114",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 6",
+            "title":"Welchen spitzen Kornertrag hat ARCHIPEL im Bundessortenversuch 2015 in Bayern erzielt?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"108%",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"100%",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
+                        "title":"106%",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"104%",
                         "truefalse" : false
                     }
                 ],
-            "explanations":["Explanation 2"]
+            "explanations":["Explanation 1"]
         },
-        {
-            "title":"Frage 7",
+         {
+            "title":"Welches besondere Resistenzgen weist ARCHIPEL auf?",
             "answers":[
                     {
-                        "title":"Answer 3_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_2",
+                        "title":"RLM7-Gen zur Phoma-Resistenz",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 3_3",
+                        "title":"ÖEA zur Trockenheitsverträglichkeit",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 8",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
+                        "title":"Resistenz gegen Schneckenfraß",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 9",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"RLM1-Gen zur Kohlhernie-Resistenz",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 10",
+            "title":"Mit welchem Qualitätsmerkmal kann Müller24 punkten?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Ölgehalt",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Phoma-Anfälligkeit",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 2"]
-        },
-        {
-            "title":"Frage 11",
-            "answers":[
-                    {
-                        "title":"Answer 3_1",
+                        "title":"Wuchshöhe",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_2",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 3_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 12",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 13",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"Blühbeginn",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 14",
+            "title":"Welche der drei im Rapssortenkatalog beworbene Sorte ist für eine frühe Aussaat geeignet?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Müller 24",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Archipel",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 2"]
-        },
-        {
-            "title":"Frage 15",
-            "answers":[
-                    {
-                        "title":"Answer 3_1",
+                        "title":"Naiad",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_2",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 3_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 16",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 17",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"Vision",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 18",
+            "title":"Welche der 4 Bereiche wird nicht von rapsexperten.de abgedeckt?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Werkstattservice",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Rapssorten",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 2"]
-        },
-        {
-            "title":"Frage 19",
-            "answers":[
-                    {
-                        "title":"Answer 3_1",
+                        "title":"Produktionstechnik",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_2",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 3_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 20",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 21",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"Pflanzenschutz",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 22",
+            "title":"Welches Hilfsmittel zur Beobachtung der Rapsschädlinge sollte im zeitigen Frühjahr aufgestellt werden?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Gelbschale",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Gelbschachtel",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 2"]
-        },
-        {
-            "title":"Frage 23",
-            "answers":[
-                    {
-                        "title":"Answer 3_1",
+                        "title":"Rotfalle",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_2",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 3_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 24",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 25",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"Rotschachtel",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 26",
+            "title":"Welchen Entwicklungsabschnitt beschreibt der BBCH-Code 50-59?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Knospenstadium",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Sprossstreckung",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 2"]
-        },
-        {
-            "title":"Frage 27",
-            "answers":[
-                    {
-                        "title":"Answer 3_1",
+                        "title":"Schotenbildung",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_2",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 3_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 3"]
-        },
-        {
-            "title":"Frage 28",
-            "answers":[
-                    {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 4_4",
-                        "truefalse" : false
-                    }
-                ],
-            "explanations":["Explanation 4"]
-        },
-        {
-            "title":"Frage 29",
-            "answers":[
-                    {
-                        "title":"Answer 1_1",
-                        "truefalse" : true
-                    },
-                    {
-                        "title":"Answer 1_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_3",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 1_4",
+                        "title":"Blüte",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 30",
+            "title":"Welcher Wirkstoff muss im Vorauflauf eingesetzt werden?",
             "answers":[
                     {
-                        "title":"Answer 2_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 2_2",
+                        "title":"Clomazone",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 2_3",
+                        "title":"Metazachlor",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 2_4",
+                        "title":"Bifenox",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Propyzamid",
                         "truefalse" : false
                     }
                 ],
-            "explanations":["Explanation 2"]
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Welche Aussaatstärke ist für Hybriden üblich?",
+            "answers":[
+                    {
+                        "title":"35 - 55 Pfl/m²",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"20 - 25 Pfl/m²",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"60 - 70 Pfl/ha",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"35 - 55 Pfl/ha",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Welcher Aussaatzeitraum ist für Winterraps optimal?",
+            "answers":[
+                    {
+                        "title":"Mitte August bis Anfang September",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Ende Juli bis Mitte August",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Ende August bis Ende Oktober",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Anfang März bis Anfang April",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Was versteht man im Zusammenhang mit Raps unter Verbänderung?",
+            "answers":[
+                    {
+                        "title":"die ungewöhnliche Wuchsstörung aufgrund des unvollständigen Teilungsprozesses",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"die Rankhilfe für Untersaaten",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"der positive Effekt auf das Zusammenspiel mit Nützlingen",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"der Entwicklungsabschnitt kurz vor der Blüte",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Was ist 00-Raps?",
+            "answers":[
+                    {
+                        "title":"erucasäure- und glucosinolatarm",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"frei von Ölsäure",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"ohne Proteinen und Glucosinulaten",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"frei von Linolen - und Essigsäure",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Aus welcher Artkreuzung ist der Raps entstanden?",
+            "answers":[
+                    {
+                        "title":"Kohl & Rübsen",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Kohl & Schwarzer Senf",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Rübsen & Schwarzer Senf",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Rübsen & Rüben",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"In welchem Bereich lässt sich das TKM der meisten Sorten einordnen?",
+            "answers":[
+                    {
+                        "title":"4 - 8 g",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"über 10 g",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"unter 3 g",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"7 - 10 g",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Zu welcher Familie gehört der Raps?",
+            "answers":[
+                    {
+                        "title":"Brassicaceae",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Poaceae",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Fabaceae",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Asteraceae",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Auf wieviel % der Rapsanbaufläche ist der Linienanteil in Deutschland zurückgegangen?",
+            "answers":[
+                    {
+                        "title":"ca. 9%",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"ca. 4%",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"ca. 15%",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"noch über 20%",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Auf wieviel Hektar wird 2016 in Bayern Winterraps angebaut?",
+            "answers":[
+                    {
+                        "title":"um die 95.000 ha",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"zwischen 60.000 und 70.000 ha",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"unter 40.000 ha",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"ca. 125.000 ha",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Welches Bundesland hat den stärksten Rückgang der Rapsaussaatfläche zu verzeichnen?",
+            "answers":[
+                    {
+                        "title":"Bayern",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Baden-Württemberg",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Thüringen",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Mecklenburg-Vorpommern",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Was ist Folicur?",
+            "answers":[
+                    {
+                        "title":"ein Fungizid",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"ein Herbizid",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"eine Rapskrankheit",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"ein Molluskizid",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Der Gehalt welcher Fettsäure ist in Rapsöl am höchsten?",
+            "answers":[
+                    {
+                        "title":"Ölsäure",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Stearinsäure",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Ameisensäure",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Erucasäure",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },
+         {
+            "title":"Der Bedarf von welchem Mikronährstoff ist in Raps im Vergleich zu Getreide ausgesprochen hoch?",
+            "answers":[
+                    {
+                        "title":"Bor",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Stickstoff",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Kupfer",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Mangan",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 31",
+            "title":"Wo ist der Raps entstanden?",
             "answers":[
                     {
-                        "title":"Answer 3_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 3_2",
+                        "title":"Mittelmeerraum",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 3_3",
+                        "title":"Amerika",
                         "truefalse" : false
                     },
                     {
-                        "title":"Answer 3_4",
+                        "title":"Australien",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"China",
                         "truefalse" : false
                     }
                 ],
-            "explanations":["Explanation 3"]
+            "explanations":["Explanation 1"]
+        },        
+        {
+            "title":"Vor wie vielen Jahren ist die Raps entstanden?",
+            "answers":[
+                    {
+                        "title":"vor 1.500 - 1800 Jahren",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"vor 500 Jahren",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"vor 2.000 - 2.500 Jahre",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"vor über 5.000 Jahren",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
         },
         {
-            "title":"Frage 32",
+            "title":"Wie lange braucht der Raps zum Auflaufen?",
             "answers":[
                     {
-                        "title":"Answer 4_1",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_2",
-                        "truefalse" : false
-                    },
-                    {
-                        "title":"Answer 4_3",
+                        "title":"80 - 120 °C-Tage",
                         "truefalse" : true
                     },
                     {
-                        "title":"Answer 4_4",
+                        "title":"unter 50 °C-Tage",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"150 - 250 °C-Tage",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"40 - 80 °C-Tage",
                         "truefalse" : false
                     }
                 ],
-            "explanations":["Explanation 4"]
+            "explanations":["Explanation 1"]
+        },
+        {
+            "title":"Wie viel Generationen bildet die Kleine Kohlfliege pro Jahr?",
+            "answers":[
+                    {
+                        "title":"3",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"1-2",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"4",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"1",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },        
+        {
+            "title":"Wann macht der Rapserdfloh den größten Schaden?",
+            "answers":[
+                    {
+                        "title":"Oktober - Mai",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"Januar",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"Juni - Juli",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"April - September",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
+        },        
+        {
+            "title":"Wie wird Kohlhernie übertragen?",
+            "answers":[
+                    {
+                        "title":"durch an Maschinen, Reifen und Schuhen anhaftende, verseuchte Erde",
+                        "truefalse" : true
+                    },
+                    {
+                        "title":"durch Wind",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"durch Regen",
+                        "truefalse" : false
+                    },
+                    {
+                        "title":"durch Insekten während der Blüte",
+                        "truefalse" : false
+                    }
+                ],
+            "explanations":["Explanation 1"]
         }
-    
 ]
-    
-

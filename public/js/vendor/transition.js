@@ -45,18 +45,18 @@ var PageTransitions = (function () {
 				right:"-50vw"
 			});
 			if($(this).attr('id')=='formTrigger'){
-				if(formIsValid(['firstname','lastname','phone'])){
+				if(formIsValid(['firstname','lastname','email'])){
 					smstextBox();
 					$pageTrigger = $(this);
 					Animate($pageTrigger);
-                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="phone"], #formTrigger').removeClass('mandatory');
+                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="email"], #formTrigger').removeClass('mandatory');
 				}else{
 					/*alert('Bitte füllen Sie die vorgegebenen Felder aus');*/
-                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="phone"], #formTrigger').addClass('mandatory');
+                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="email"], #formTrigger').addClass('mandatory');
 				}
 			}
 			else if($(this).attr('id')=='formTrigger2'){
-				if(formIsValid(['firstname','lastname','phone'])){
+				if(formIsValid(['firstname','lastname','email'])){
 					$pageTrigger = $(this);
 					var params=jQuery('#contactForm').serialize();
 					//if(termsAgreed()){

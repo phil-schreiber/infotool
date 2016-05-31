@@ -27,7 +27,11 @@ function init(jQuery){
 		jQuery('#loadingimg').show();	
 		requireControllerPlugins();
 	}
-	
+	jQuery('a.lightbox').click( function(event) {
+            event.preventDefault();
+            jQuery(this).ekkoLightbox();
+        }); 
+        jQuery('#archipelFieldeye').attr('src','https://fieldeye.eu/?embedded=55f0372feae4a&amp;lang=en&amp;gallery_width=850&amp;color_main=009650');
 	/*timerInterval=window.setInterval(function(){			
 		
 		if(time==180){
@@ -313,7 +317,7 @@ function init(jQuery){
 			var chosenRep=jQuery(this).find('input').val();
 			goToContact(chosenRep);
 	});
-	jQuery('#searchResults').on('click','.autocomplete-suggestion',function(){
+	jQuery('#searchForm').on('click','.autocomplete-suggestion',function(){
 			resetContactForm();
                         resetSearchResults();
 		var chosenRep=jQuery(this).attr('data-index');

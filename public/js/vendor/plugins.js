@@ -28,12 +28,13 @@ require.config({
 		transition:'transition',
 		jsKeyboard:'jsKeyboard',
 		autocomplete:'jquery.autocomplete',
-		report: 'report'
+		report: 'report',
+                lightbox: 'ekko-lightbox.min'
     }
 });
 
 require(['jquery'], function( jQuery ) {
-	require(['jsKeyboard','jqueryui','main','bootstrap','transition','autocomplete']);
+	require(['jsKeyboard','jqueryui','main','bootstrap','transition','autocomplete','ekko-lightbox.min']);
 	
 	
 
