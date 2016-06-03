@@ -109,18 +109,22 @@ function init(jQuery){
 			},'slow');				
 			
 			jQuery('#consultantSelect option').each(function(index,element){
-				jQuery(element).removeAttr('selected');				
+				jQuery(element).removeAttr('selected');	
+                                
 				if(jQuery(element).val()==chosenRep){
+                                    
 					jQuery(element).attr('selected','selected');
 					jQuery('.choice').html(jQuery(element).html());
 				}
+                                
 			});
+                        
 			
 	};
 	
 	
 	jQuery('#consultantSelect').change(function(e){				
-		jQuery('.choice').html(jQuery('#consultantSelect option:selected').text());
+		jQuery('.choice').html(jQuery("#consultantSelect option[selected='selected']").text());
 	});
 	jQuery('#smsTextsSelect').on('click','li',function(e){		
 		jQuery('#smsTexts').html(jQuery(this).text());
@@ -321,6 +325,7 @@ function init(jQuery){
 			resetContactForm();
                         resetSearchResults();
 		var chosenRep=jQuery(this).attr('data-index');
+                
 			goToContact(chosenRep);
 	});
 	/*jQuery('#contactForm').submit(function(e){
@@ -393,8 +398,9 @@ function init(jQuery){
 	 jQuery('#surveystartpage').css( "zIndex", 1 );
 }
 
-function smstextBox(){			
-	var berater=new window.smsTexte.berater(jQuery('#consultantSelect option:selected').val(),jQuery('#consultantSelect option:selected').text());
+function smstextBox(){		
+    
+	var berater=new window.smsTexte.berater(jQuery("#consultantSelect option[selected='selected']").val(),jQuery("#consultantSelect option[selected='selected']").text());
 	var kunde=new window.smsTexte.kunde(jQuery('input[name="firstname"]').val(),jQuery('input[name="lastname"]').val(),jQuery('input[name="phone"]').val());
 	new smsTexte.createBox(berater,kunde);
 	

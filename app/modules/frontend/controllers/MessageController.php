@@ -2,6 +2,8 @@
 namespace messetool\Modules\Modules\Frontend\Controllers;
 use messetool\Models\Feusers AS Feusers,
 	messetool\Models\Messages AS Messages;
+require_once '../app/library/Swiftmailer/swift_required.php';
+require_once '../app/library/Html2Plain/Html2Text.php';
 /**
  * Class IndexController
  *
@@ -42,7 +44,7 @@ class MessageController extends ControllerBase
 			'message' =>$this->request->hasPost('message') ? $this->request->getPost('message') : ' ',			
 			'firstname' => $this->request->hasPost('firstname') ? $this->request->getPost('firstname') : ' ',
 			'lastname' => $this->request->hasPost('lastname') ? $this->request->getPost('lastname') : ' ',
-			'phone' => $this->request->hasPost('phone') ? $this->request->getPost('phone') : ' ',
+			'phone' => $this->request->hasPost('email') ? $this->request->getPost('email') : ' ',
 			'zip' => $this->request->hasPost('zip') ? $this->request->getPost('zip') : ' ',
 			'city' => $this->request->hasPost('city') ? $this->request->getPost('city') : ' ',
 			'farmer' => $this->request->hasPost('farmer') ? $this->request->getPost('farmer') : 0,
@@ -51,24 +53,42 @@ class MessageController extends ControllerBase
 		if(!$message->save()){
 			$this->flash->error($feuser->getMessages());
 		}
-		$sendMessage=array(
-			'konto' => 2982,
-			'password' => md5('ihttomlin1979'),
-			'service' =>6078,			
-			'text' => $message->message,
-			'encoding' => 0,
-			'from' => $message->phone,
-			'to' => $feuser->phone,
-			'timestamp' => 0,
-			'return' => 'text',
-			'httphead' => 1,
-			'action' => 'send'
+                $mailtext='Nachricht von Messebesucher '.$this->request->getPost('firstname').' '.$this->request->getPost('lastname').' ('.$this->request->getPost('email').'): <br><br>'.$message->message;
+                if($feuser){
+		$sendMessage=array(		
+			'text' => $mailtext,
+			'to' => $feuser->email,
+                        'name' => $feuser->fullname
 		);
-		$this->sendMessage($sendMessage);
+		$this->sendEmail($sendMessage);
+                }
 		}
 		
 	}
 	
+        private function sendEmail($messageData){
+             $transport = \Swift_SmtpTransport::newInstance()
+							->setHost($this->config['smtp']['host'])
+							->setPort($this->config['smtp']['port'])
+							->setEncryption($this->config['smtp']['security'])
+							->setUsername($this->config['smtp']['username'])
+							->setPassword($this->config['smtp']['password']);
+			$mailer = \Swift_Mailer::newInstance($transport);
+			$mailer->registerPlugin(new \Swift_Plugins_AntiFloodPlugin(100,30));
+			$message = \Swift_Message::newInstance($mailing->subject)
+                                                ->setSender(array($this->config['admin']['email'] => $this->config['admin']['name']))
+						->setFrom(array($this->config['admin']['email'] => $this->config['admin']['name']))
+						->setReplyTo($this->request->getPost('email'))
+						->setReturnPath($this->config['admin']['email']);
+			$message->setBody($messageData['text'], 'text/html');
+			$message->setTo(array($messageData['to'] => $messageData['name']));
+			$h2t = new \Html2Text\Html2Text($messageData);
+                        $message->addPart($h2t->getText(), 'text/plain');
+
+			//pull the trigger
+			$mailer->send($message, $failures);
+        }
+        
 	/*
 	 * Guess what it does
 	 */	

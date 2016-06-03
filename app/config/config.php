@@ -30,9 +30,20 @@ return new \Phalcon\Config(array(
 		'dontSendReally' => false,
 		'dontSendDuplicates' => true,
 		'version' => '0.1 alpha'
-    ),    
-    
-	'onspotusergroup' => 3,
+    ), 
+    'admin' => array(
+		'email' => 'baywa-infotool@denkfabrik-group.com',
+		'name' => 'BayWa Infotool - Admin'
+	),   
+    'smtp'        => array(
+        'host'     => "smtp.iq-pi.org",
+        'port'     => 25,
+        'security' => "tls",
+        'username' => "mailing@iq-pi.org",
+        'password' => "hpkYhxr&mdm7", //
+		'mailcycle' => 500
+    ),
+	'onspotusergroup' => 2,
 	'languages'=>array(
 		'de' => 'Deutsch',
 		'en' => 'English'
