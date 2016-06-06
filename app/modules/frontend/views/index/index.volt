@@ -117,11 +117,31 @@
                 <div  class="pt-wrapper" id="sortenPage">
                 <div class="pt-page pt-page-1"  style="display:block;">
                     <table class="maintable">
-                        <thead>
-                            <tr><th colspan="2"><span style="font-size: 3vw;color: #01994e;">Archipel</span><br><span style="font-size: 1em;color:#4d4d4d">Der Herbstmeister</span></th></tr>
-                        </thead>
-                        <tbody>
-                            <tr>
+                        
+                            
+                                  <tr><td><span style="font-size: 3vw;color: #01994e;font-weight:bold;">ARCHIPEL</span><br><span style="font-size: 1em;color:#4d4d4d">Der Herbstmeister</span></td>
+                                      <td rowspan="3">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/archipel_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_1.jpg" style="height:20vh"></a>
+                                            </td>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/archipel_2.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_2.jpg" style="height:20vh"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/archipel_3.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_3.jpg" style="height:20vh"></a>
+                                            </td>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/archipel_4.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_4.jpg" style="height:20vh"></a>
+                                            </td>
+                                        </tr>                                                                                                            
+                                    </table>
+                                </td>
+                                  </tr>
+                                  <tr>                                  
                                 <td>
                                     <p>                                        
 Stärken:                                    </p>
@@ -137,41 +157,39 @@ Stärken:                                    </p>
 </button>
                                     
                                 </td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/archipel_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_1.jpg" style="height:10vh"></a>
-                                            </td>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/archipel_2.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_2.jpg" style="height:10vh"></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/archipel_3.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_3.jpg" style="height:10vh"></a>
-                                            </td>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/archipel_4.jpg" data-toggle="lightbox" class="lightbox" data-gallery="galleryname"> <img src="{{baseurl}}public/media/archipel_4.jpg" style="height:10vh"></a>
-                                            </td>
-                                        </tr>                                                                                                            
-                                    </table>
-                                </td>
+                                
                             </tr>						
                             <tr>
-                                <td colspan="2" style="vertical-align:bottom;">
-                                    <a data-animation="32" data-goto="2" class="pt-trigger">Müller 24</a>
+                                <td style="vertical-align:bottom;">
+                                    <a data-animation="32" data-goto="2" class="pt-trigger">MÜLLER 24</a>
+                                    <a data-animation="32" data-goto="3" class="pt-trigger">NAIAD</a>
                                 </td>
                             </tr>
-                        </tbody>
+                        
 			</table>
                 </div>
                 <div class="pt-page pt-page-2"  style="display:block;">
-                    <table class="maintable">
-                        <thead>
-                            <tr><th colspan="2"><span style="font-size: 3vw;color: #01994e;">Müller 24</span><br><span style="font-size: 1em;color:#4d4d4d">Der Ölmeister</span></th></tr>
-                        </thead>
-                        <tbody>
+                    <table class="maintable">                        
+                        <tr><td ><span style="font-size: 3vw;color: #01994e;font-weight:bold;">MÜLLER 24</span><br><span style="font-size: 1em;color:#4d4d4d">Der Ölmeister</span></td>
+                        <td rowspan="3">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/mueller24_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="mueller"> <img src="{{baseurl}}public/media/mueller24_1.jpg" style="height:20vh"></a>
+                                            </td>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/mueller24_2.jpg" data-toggle="lightbox" class="lightbox" data-gallery="mueller"> <img src="{{baseurl}}public/media/mueller24_2.jpg" style="height:20vh"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                <a href="{{baseurl}}public/media/mueller24_3.jpg" data-toggle="lightbox" class="lightbox" data-gallery="mueller"> <img src="{{baseurl}}public/media/mueller24_3.jpg" style="height:20vh"></a>
+                                            </td>
+                                            
+                                        </tr>                                                                                                            
+                                    </table>
+                                </td>
+                        </tr>
                             <tr>
                                 <td>
                                     <p>                                        
@@ -188,40 +206,33 @@ Stärken:                                    </p>
                                    
                                     
                                 </td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/mueller24_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="mueller"> <img src="{{baseurl}}public/media/mueller24_1.jpg" style="height:10vh"></a>
-                                            </td>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/mueller24_2.jpg" data-toggle="lightbox" class="lightbox" data-gallery="mueller"> <img src="{{baseurl}}public/media/mueller24_2.jpg" style="height:10vh"></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/mueller24_3.jpg" data-toggle="lightbox" class="lightbox" data-gallery="mueller"> <img src="{{baseurl}}public/media/mueller24_3.jpg" style="height:10vh"></a>
-                                            </td>
-                                            
-                                        </tr>                                                                                                            
-                                    </table>
-                                </td>
+                                
                             </tr>						
                             <tr>
-                                <td colspan="2" style="vertical-align:bottom">
+                                <td  style="vertical-align:bottom">
                                     <a class="pt-trigger" data-animation="33" data-goto="-2">ARCHIPEL</a>
                                     <a data-animation="32" data-goto="3" class="pt-trigger">NAIAD</a>
                                 </td>
                             </tr>
-                        </tbody>
+                        
 			</table>
                 </div>
                     <div class="pt-page pt-page-3"  style="display:block;">
                     <table class="maintable">
-                        <thead>
-                            <tr><th colspan="2"><span style="font-size: 3vw;color: #01994e;">NAIAD</span><br><span style="font-size: 1em;color:#4d4d4d">Der leistungsstarke Hybride</span></th></tr>
-                        </thead>
-                        <tbody>
+                        
+                            <tr><td><span style="font-size: 3vw;color: #01994e;font-weight:bold">NAIAD</span><br><span style="font-size: 1em;color:#4d4d4d">Der leistungsstarke Hybride</span></td>
+                            <td rowspan="3">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="{{baseurl}}public/media/naiad_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="naiad"> <img src="{{baseurl}}public/media/naiad_1.jpg" style="height:30vh"></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>
                                     <p>                                        
@@ -237,25 +248,15 @@ Stärken:                                    </p>
                                    
                                     
                                 </td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="{{baseurl}}public/media/naiad_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="naiad"> <img src="{{baseurl}}public/media/naiad_1.jpg" style="height:10vh"></a>
-                                            </td>
-                                            
-                                        </tr>
-                                        
-                                    </table>
-                                </td>
+                                
                             </tr>						
                             <tr>
-                                <td colspan="2" style="vertical-align:bottom">
+                                <td  style="vertical-align:bottom">
                                     <a class="pt-trigger" data-animation="33" data-goto="-2">MÜLLER24</a>
                                     <a data-animation="32" data-goto="1" class="pt-trigger">ARCHIPEL</a>
                                 </td>
                             </tr>
-                        </tbody>
+                        
 			</table>
                 </div>
                     </div>
@@ -340,8 +341,8 @@ Stärken:                                    </p>
 						<tr>							
 							<td>
 								<div class="alignLeft">
-								<label for="email">{{tr('email')}}*</label><br>
-								<input type="text" name="email"><br><br>
+								<label for="phone">{{tr('phone')}}*</label><br>
+								<input type="text" name="phone"><br><br>
 								</div>
 							</td>
 							<td>
@@ -396,7 +397,7 @@ Stärken:                                    </p>
 						</tr>						
 						<tr>
 							<td colspan="2" style="text-align: left; padding-left:3.5vw;">								
-								<input type="hidden" name="terms" id="terms" value="1" checked="checked"> <label for="terms">{{tr('terms')}}</label>								
+								<input type="hidden" name="terms" id="terms" value="1" checked="checked"> <label for="terms" class="terms">{{tr('terms')}}</label>								
 							</td>
 						</tr>
 						<tr>

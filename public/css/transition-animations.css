@@ -374,6 +374,13 @@
 	-webkit-animation: flipOutRight .5s both ease-in;
 	animation: flipOutRight .5s both ease-in;
 }
+
+.pt-page-flipOutRightQuiz {
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-animation: flipOutRight 1.5s both ease-in;
+	animation: flipOutRight 1.5s both ease-in;
+}
 .pt-page-flipInLeft {
 	-webkit-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
@@ -1294,4 +1301,9 @@
 .pt-page-delay1000 {
 	-webkit-animation-delay: 1s;
 	animation-delay: 1s;
+}
+
+.pt-page-delay2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
 }

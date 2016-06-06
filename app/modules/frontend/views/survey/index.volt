@@ -7,7 +7,7 @@
 			</div>
 			<div class="headerWrap">
 				<h1>Quiz</h1>
-
+<h2>Werden Sie zum Rapsexperten</h2>
 			</div>
 			<div id="virtualKeyboard" class="virtualKeyboard"></div>
 			<div class='clearfix'></div>
@@ -54,12 +54,12 @@
 				<div class="pt-page pt-page-11" id="questionThankyou">
 					<br>
 					<div class="statusbar outer">
-					<h3 style="margin-left">Sie haben <span id="result"></span>% der Fragen richtig beantwortet.</h3>
+                                            <h3 style="margin-left">Herzlichen Glückwunsch,<br> Sie haben  <span id="result"></span>% der Fragen richtig beantwortet.<br>An der Theke erhalten Sie Ihren Gewinn.</h3>
                                         
 					</div>
 					<div class="trigger-buttons">
-						<a href="/" class="navButton small"  style="margin-left:30px;float:left;font-size:1.5vw;font-weight:normal">{{tr('backHome')}}</a>
-                                                <a href="/de/survey" class="navButton small"  style="margin-left:30px;float:left;font-size:1.5vw;font-weight:normal" ><span>Quiz starten</span></a>
+						
+                                              
 					</div>
 					
 					

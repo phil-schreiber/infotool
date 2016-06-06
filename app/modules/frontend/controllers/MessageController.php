@@ -44,7 +44,7 @@ class MessageController extends ControllerBase
 			'message' =>$this->request->hasPost('message') ? $this->request->getPost('message') : ' ',			
 			'firstname' => $this->request->hasPost('firstname') ? $this->request->getPost('firstname') : ' ',
 			'lastname' => $this->request->hasPost('lastname') ? $this->request->getPost('lastname') : ' ',
-			'phone' => $this->request->hasPost('email') ? $this->request->getPost('email') : ' ',
+			'phone' => $this->request->hasPost('phone') ? $this->request->getPost('phone') : ' ',
 			'zip' => $this->request->hasPost('zip') ? $this->request->getPost('zip') : ' ',
 			'city' => $this->request->hasPost('city') ? $this->request->getPost('city') : ' ',
 			'farmer' => $this->request->hasPost('farmer') ? $this->request->getPost('farmer') : 0,
@@ -53,15 +53,20 @@ class MessageController extends ControllerBase
 		if(!$message->save()){
 			$this->flash->error($feuser->getMessages());
 		}
-                $mailtext='Nachricht von Messebesucher '.$this->request->getPost('firstname').' '.$this->request->getPost('lastname').' ('.$this->request->getPost('email').'): <br><br>'.$message->message;
-                if($feuser){
-		$sendMessage=array(		
-			'text' => $mailtext,
-			'to' => $feuser->email,
-                        'name' => $feuser->fullname
+		$sendMessage=array(
+			'konto' => 2982,
+			'password' => md5('ihttomlin1979'),
+			'service' =>6078,			
+			'text' => $message->message,
+			'encoding' => 0,
+			'from' => $message->phone,
+			'to' => $feuser->phone,
+			'timestamp' => 0,
+			'return' => 'text',
+			'httphead' => 1,
+			'action' => 'send'
 		);
-		$this->sendEmail($sendMessage);
-                }
+		$this->sendMessage($sendMessage);
 		}
 		
 	}

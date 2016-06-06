@@ -45,18 +45,18 @@ var PageTransitions = (function () {
 				right:"-50vw"
 			});
 			if($(this).attr('id')=='formTrigger'){
-				if(formIsValid(['firstname','lastname','email'])){
+				if(formIsValid(['firstname','lastname','phone'])){
 					smstextBox();
 					$pageTrigger = $(this);
 					Animate($pageTrigger);
-                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="email"], #formTrigger').removeClass('mandatory');
+                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="phone"], #formTrigger').removeClass('mandatory');
 				}else{
 					/*alert('Bitte füllen Sie die vorgegebenen Felder aus');*/
-                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="email"], #formTrigger').addClass('mandatory');
+                                        jQuery('#formPage input[name="firstname"], #formPage input[name="lastname"], #formPage input[name="phone"], #formTrigger').addClass('mandatory');
 				}
 			}
 			else if($(this).attr('id')=='formTrigger2'){
-				if(formIsValid(['firstname','lastname','email'])){
+				if(formIsValid(['firstname','lastname','phone'])){
 					$pageTrigger = $(this);
 					var params=jQuery('#contactForm').serialize();
 					//if(termsAgreed()){
@@ -113,7 +113,7 @@ var PageTransitions = (function () {
         }
 
         // Checking if the animation number is out of bound, max allowed value is 1 to 67.
-        if (selectedAnimNumber > 67) {
+        if (selectedAnimNumber > 68) {
             alert("Transition.js : Invalid 'data-animation' attribute configuration. Animation number should not be greater than 67");
             return false;
         }
@@ -386,6 +386,11 @@ var PageTransitions = (function () {
             case 67:
                 inClass = 'pt-page-rotateSlideIn';
                 outClass = 'pt-page-rotateSlideOut';
+                break;
+            case 68:                
+                inClass = 'pt-page-flipInLeft pt-page-delay2000';
+                outClass = 'pt-page-flipOutRightQuiz';
+                
                 break;
         }
 

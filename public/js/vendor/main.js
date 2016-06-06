@@ -63,11 +63,9 @@ function init(jQuery){
 				"#TelefonnummerKunde#":kunde.phone
 			};
 		};
-		var texte={
-			0:"Hallo #Berater#, viele Grüße von den DLG Feldtagen sendet #KundeVorname# #KundeNachname#.",
-			1:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Sind Sie/bist Du heute auch hier anzutreffen? Über eine kurze Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
-			2:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Sind Sie/bist Du heute oder morgen auch hier anzutreffen? Über einen kurzen Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
-			3:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Bitte melden Sie sich/melde Dich doch zeitnah nach den DLG Feldtagen bezüglich eines Termins bei mir. Über einen kurze Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#."			
+		var texte={			
+			0:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Sind Sie heute oder morgen auch hier anzutreffen? Über eine kurze Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
+			1:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Bitte melden Sie sich doch zeitnah nach den DLG Feldtagen bezüglich eines Termins bei mir. Über einen kurze Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#."			
 		};
 		
 		var insertSelectbox = function(labels) {
@@ -401,7 +399,7 @@ function init(jQuery){
 function smstextBox(){		
     
 	var berater=new window.smsTexte.berater(jQuery("#consultantSelect option[selected='selected']").val(),jQuery("#consultantSelect option[selected='selected']").text());
-	var kunde=new window.smsTexte.kunde(jQuery('input[name="firstname"]').val(),jQuery('input[name="lastname"]').val(),jQuery('input[name="email"]').val());
+	var kunde=new window.smsTexte.kunde(jQuery('input[name="firstname"]').val(),jQuery('input[name="lastname"]').val(),jQuery('input[name="phone"]').val());
 	new smsTexte.createBox(berater,kunde);
 	
 }
@@ -467,7 +465,7 @@ function smstextBox(){
 					<form autocomplete="off" class="survey" name="question_'+index+'">\
 <table class="formTable"><thead><tr><th colspan="2"><h3>'+question.title+'</h3></th></tr></thead><tbody>'+answers+'</tbody></table>\
 						<div class="trigger-buttons">\
-							<input type="submit" value="Weiter" data-animation="32" data-goto="'+(index+2)+'" class="pt-trigger navButton">\
+							<input type="submit" value="Weiter" data-animation="68" data-goto="'+(index+2)+'" class="pt-trigger navButton">\
 						</div>\
 						<input type="hidden" name="question" value="'+qid+'">\
                                                 <input type="hidden" name="questionnumber" value="'+index+'">\
@@ -479,9 +477,16 @@ function smstextBox(){
                 var goOn=function(e){
                   
                   var params=jQuery('form[name="question_'+counter+'"]').serialize();
-                  result+=parseInt(jQuery('form[name="question_'+counter+'"] input:checked').val());
+                  var rightWrong=parseInt(jQuery('form[name="question_'+counter+'"] input:checked').val());
+                  result+=rightWrong;
                   ajaxIt("survey","create",params+'&sesid='+sesid,dummyEmpty);
-                  
+                  console.log(rightWrong);
+                  console.log(jQuery(this));
+                  if(rightWrong){
+                      jQuery('form[name="question_'+counter+'"] input:checked').parent().addClass('green');
+                  }else{
+                      jQuery('form[name="question_'+counter+'"] input:checked').parent().addClass('red');
+                  }
                   
                       jQuery('#result').html(result*10);
                   
@@ -503,7 +508,7 @@ function smstextBox(){
                     PageTransitions.Animate(ptrigger);
                     jQuery('.pt-trigger').click(function(e){
                         counter++;
-                        goOn();
+                        goOn(e);
                     });
                 };
 				
@@ -636,6 +641,9 @@ function formIsValid(fields){
 		if (x == null || x == "") {			
 			return false;
 		}
+                if(fields[i]=='email' && (x.indexOf('@') == -1 || x.indexOf('.') == -1)){
+                    return false;
+                }
 	}
 	return true;
 }

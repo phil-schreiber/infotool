@@ -2563,3 +2563,17 @@ table#report td, table#report th, table#average td, table#average th{
 #result{
     font-size: 1.5vw;
 }
+
+.modal-dialog{width:1000px !important;}
+
+label.terms{
+    font-size:0.8em;
+    line-height:1em;
+}
+
+.green{
+    background:#01994e !important;
+}
+.red{
+    background:#ee0000 !important;
+}
