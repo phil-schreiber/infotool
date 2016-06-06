@@ -32,15 +32,15 @@ function init(jQuery){
             jQuery(this).ekkoLightbox();
         }); 
         jQuery('#archipelFieldeye').attr('src','https://fieldeye.eu/?embedded=55f0372feae4a&amp;lang=en&amp;gallery_width=850&amp;color_main=009650');
-	/*timerInterval=window.setInterval(function(){			
+	timerInterval=window.setInterval(function(){			
 		
 		if(time==180){
-			window.location.href='http://agritechnica2015.denkfabrik-group.com/';
+			window.location.href='http://infotool.denkfabrik-entwicklung.de/';
 		}else{
 			time++;
 		}
 		
-	},1000);*/
+	},1000);
 	
 	(function ($, smsTexte, undefined) {
 		smsTexte.berater = function(uid,name){
@@ -64,10 +64,10 @@ function init(jQuery){
 			};
 		};
 		var texte={
-			0:"Hallo #Berater#, viele Grüße von der Agritechnica sendet #KundeVorname# #KundeNachname#.",
-			1:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf der Agritechnica. Sind Sie/bist Du heute auch hier anzutreffen? Über einen kurzen Rückruf unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
-			2:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf der Agritechnica. Sind Sie/bist Du heute oder morgen auch hier anzutreffen? Über einen kurzen Rückruf unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
-			3:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf der Agritechnica. Bitte melden Sie sich/melde Dich doch zeitnah nach der Agritechnica bezüglich eines Termins bei mir. Über einen kurzen Rückruf unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#."			
+			0:"Hallo #Berater#, viele Grüße von den DLG Feldtagen sendet #KundeVorname# #KundeNachname#.",
+			1:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Sind Sie/bist Du heute auch hier anzutreffen? Über eine kurze Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
+			2:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Sind Sie/bist Du heute oder morgen auch hier anzutreffen? Über einen kurzen Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#.",
+			3:"Hallo #Berater#, ich stehe gerade auf dem BayWa Stand auf den DLG Feldtagen. Bitte melden Sie sich/melde Dich doch zeitnah nach den DLG Feldtagen bezüglich eines Termins bei mir. Über einen kurze Rückmeldung unter #TelefonnummerKunde# freut sich #KundeVorname# #KundeNachname#."			
 		};
 		
 		var insertSelectbox = function(labels) {
@@ -112,8 +112,8 @@ function init(jQuery){
 				jQuery(element).removeAttr('selected');	
                                 
 				if(jQuery(element).val()==chosenRep){
-                                    
-					jQuery(element).attr('selected','selected');
+                                        jQuery(element).attr('selected','selected');
+					jQuery(element).prop('selected','selected');
 					jQuery('.choice').html(jQuery(element).html());
 				}
                                 
@@ -401,7 +401,7 @@ function init(jQuery){
 function smstextBox(){		
     
 	var berater=new window.smsTexte.berater(jQuery("#consultantSelect option[selected='selected']").val(),jQuery("#consultantSelect option[selected='selected']").text());
-	var kunde=new window.smsTexte.kunde(jQuery('input[name="firstname"]').val(),jQuery('input[name="lastname"]').val(),jQuery('input[name="phone"]').val());
+	var kunde=new window.smsTexte.kunde(jQuery('input[name="firstname"]').val(),jQuery('input[name="lastname"]').val(),jQuery('input[name="email"]').val());
 	new smsTexte.createBox(berater,kunde);
 	
 }
@@ -452,7 +452,7 @@ function smstextBox(){
                             if(ind===0 || ind===2){
                                 answers+='<tr>';
                             }
-                            answers+='<td><label class="label_'+ind+'"><input type="radio" name="answer" value="'+truefalse+'"> '+question.answers[el].title+'</label></td>';
+                            answers+='<td><label class="label_'+ind+'"><input type="radio" name="answer" value="'+truefalse+'"> <span>'+question.answers[el].title+'</span></label></td>';
                             
                             if(ind===1 || ind===3){
                                answers+='</tr>';
@@ -477,19 +477,19 @@ function smstextBox(){
 		};
 		
                 var goOn=function(e){
-                  console.log(sesid);
+                  
                   var params=jQuery('form[name="question_'+counter+'"]').serialize();
                   result+=parseInt(jQuery('form[name="question_'+counter+'"] input:checked').val());
                   ajaxIt("survey","create",params+'&sesid='+sesid,dummyEmpty);
                   
-                  if(counter===10){
+                  
                       jQuery('#result').html(result*10);
-                  }
+                  
                 };
     
     
 		var getQuestions=function(callback){
-                    $.getJSON('/agrar-messetool/public/quiz.json',callback);
+                    $.getJSON('/public/quiz.json',callback);
                 };
                 var writeQuestions=function(data){
                         

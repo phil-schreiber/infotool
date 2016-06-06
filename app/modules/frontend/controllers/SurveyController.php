@@ -66,7 +66,7 @@ class SurveyController extends ControllerBase
 				
 					$radioitem=new Questionitem();
 					$radioitem->assign(array(
-						'pid' => $question->uid,
+						'pid' => $this->request->hasPost('sesid') ? $this->request->getPost('sesid') : 0,
 						'tstamp' => $time,
 						'crdate' => $time,
 						'cruser_id' => 0,

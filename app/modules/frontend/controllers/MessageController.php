@@ -75,7 +75,7 @@ class MessageController extends ControllerBase
 							->setPassword($this->config['smtp']['password']);
 			$mailer = \Swift_Mailer::newInstance($transport);
 			$mailer->registerPlugin(new \Swift_Plugins_AntiFloodPlugin(100,30));
-			$message = \Swift_Message::newInstance($mailing->subject)
+			$message = \Swift_Message::newInstance('Kontakt über DLG Feldtage Info-Tool')
                                                 ->setSender(array($this->config['admin']['email'] => $this->config['admin']['name']))
 						->setFrom(array($this->config['admin']['email'] => $this->config['admin']['name']))
 						->setReplyTo($this->request->getPost('email'))

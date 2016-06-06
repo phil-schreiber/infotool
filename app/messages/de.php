@@ -104,7 +104,7 @@ $messages = array(
 	"name" => "Vorname/Name",
 	"survey" =>"Befragung",
 	"surveyHeader" => "Meine Messebewertung.",
-	"surveyHeaderInfo" => "<p>Vielen Dank, dass Sie uns auf der Agritechnica in Hannover besuchen! </p>
+	"surveyHeaderInfo" => "<p>Vielen Dank, dass Sie uns auf den DLG Feldtagen besuchen! </p>
 		<p>Wir freuen uns, wenn Sie uns dabei unterstützen, unsere Messeauftritte zu verbessern und sich einige Minuten Zeit nehmen, unsere Fragen zu beantworten.</p>
 		<p>Sämtliche von Ihnen in der Umfrage gemachten Angaben werden vertraulich und unter Einhaltung der Datenschutzbestimmungen behandelt. Die Daten werden nicht an Dritte weitergegeben und dienen ausschließlich zur Bewertung der Auftritte der BayWa AG.</p>",
 	"surveyButtonStart" => "Umfrage starten",
@@ -177,7 +177,7 @@ $messages = array(
 	"backHome" => "Zurück zum Startbildschirm",
 	"onspot" => "Zu den Standmitarbeitern",
 	"surveyHeaderB" => "Messebewertung Standpersonal",
-	"surveyHeaderInfoB" => "<p>Herzlichen Dank für Ihre Unterstützung auf der Agritechnica! </p><p>Bitte bewerten Sie unseren gemeinsamen Auftritt. Ihre Anregungen, Kritik und Ideen sind wichtig für künftige Messeauftritte.</p>",
+	"surveyHeaderInfoB" => "<p>Herzlichen Dank für Ihre Unterstützung auf den DLG Feldtagen! </p><p>Bitte bewerten Sie unseren gemeinsamen Auftritt. Ihre Anregungen, Kritik und Ideen sind wichtig für künftige Messeauftritte.</p>",
 	"question_1_b" => "Wie beurteilen Sie den BayWa Stand allgemein?",
 	"surveyAnswerSuggestions" => "Meine Anregungen",
 	"question_2_b" => "Wie beurteilen Sie folgende Bereiche unseres Standes?",

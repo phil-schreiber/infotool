@@ -2095,8 +2095,14 @@ li.list-group-item img{
 	margin-right:auto;
 }
 
-#surveyFormWrapper span{
-    	font-size:1.3vw;
+#surveyFormWrapper label span{
+    font-size:1.3vw;        
+    display: inline-block;    
+    width: 90%;
+    text-align: left;
+}
+#surveyFormWrapper input{
+    display:inline-block;
 }
 
 #surveyFormWrapper h3{
@@ -2241,7 +2247,7 @@ table.formTable table td{
 	margin-right:auto;
 }
 .survey table.formTable td{
-	width:26vw;
+	width:40vw;
 }
 .survey table#dayTable td{
 	width:auto;
@@ -2553,4 +2559,7 @@ table#report td, table#report th, table#average td, table#average th{
 .survey label:hover{    
     background:#fff;
     border:1px solid;
+}
+#result{
+    font-size: 1.5vw;
 }

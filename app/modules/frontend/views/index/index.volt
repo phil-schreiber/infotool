@@ -81,7 +81,7 @@
 										<a href='{{language}}/baywa'>
 										<table style="width:100%;height:100%">
 											<tr>											
-												<td style="vertical-align:middle"><p>{{tr('button4')}}</p></td>											  
+												<td style="vertical-align:middle"><p style="font-size: 1.5vw;">{{tr('button4')}}</p></td>											  
 											</tr>
 										  </table>	
 										</a>
@@ -241,7 +241,7 @@ Stärken:                                    </p>
                                     <table>
                                         <tr>
                                             <td>
-                                                <a href="{{baseurl}}public/media/naiad_1.jpg.jpg" data-toggle="lightbox" class="lightbox" data-gallery="naiad"> <img src="{{baseurl}}public/media/naiad_1.jpg.jpg" style="height:10vh"></a>
+                                                <a href="{{baseurl}}public/media/naiad_1.jpg" data-toggle="lightbox" class="lightbox" data-gallery="naiad"> <img src="{{baseurl}}public/media/naiad_1.jpg" style="height:10vh"></a>
                                             </td>
                                             
                                         </tr>
@@ -413,7 +413,7 @@ Stärken:                                    </p>
 								<td>
 									<h3 style="margin-left">{{tr('messageSent')}}</h3>						
 						<br><br>
-						<a href="http://agritechnica2015.denkfabrik-group.com/" class="navButton"  id="consultantNotFound"><span class="icon i_right_primary"></span><span class="btn_label">{{tr('backHome')}}</span></a>
+						<a href="http://infotool.denkfabrik-group.com/" class="navButton"  id="consultantNotFound"><span class="icon i_right_primary"></span><span class="btn_label">{{tr('backHome')}}</span></a>
 								</td>
 							</tr>						
 							

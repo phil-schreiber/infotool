@@ -3,7 +3,7 @@
 		<a name="survey"></a>
 		<header>
 			<div class="logo">
-				<a href="http://agritechnica2015.denkfabrik-group.com/">{{image('images/baywa-logo.png', "class":"logo")}}</a>
+				<a href="/">{{image('images/baywa-logo.png', "class":"logo")}}</a>
 			</div>
 			<div class="headerWrap">
 				<h1>Quiz</h1>
@@ -58,14 +58,15 @@
                                         
 					</div>
 					<div class="trigger-buttons">
-						<a href="http://agritechnica2015.denkfabrik-group.com/" class="navButton small"  id="consultantNotFound" style="margin-left:30px;float:left;font-size:1.5vw;font-weight:normal">{{tr('backHome')}}</a>
+						<a href="/" class="navButton small"  style="margin-left:30px;float:left;font-size:1.5vw;font-weight:normal">{{tr('backHome')}}</a>
+                                                <a href="/de/survey" class="navButton small"  style="margin-left:30px;float:left;font-size:1.5vw;font-weight:normal" ><span>Quiz starten</span></a>
 					</div>
 					
 					
 				</div>
 			</div>
 		</div>
-		<a href="http://agritechnica2015.denkfabrik-group.com/" class="navButton small backToTop"  ><span class="icon i_up_primary"></span><span class="btn_label">{{tr('backHome')}}</span></a>
+		<a href="/" class="navButton small backToTop"  ><span class="icon i_up_primary"></span><span class="btn_label">{{tr('backHome')}}</span></a>
 	</section>
 
 <div id="virtualKeyboardWrapper"></div>
