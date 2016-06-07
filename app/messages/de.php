@@ -227,7 +227,7 @@ $messages = array(
 	"bildnummer" => "Bildnummer",
 	"messageTo" => "Nachricht an",
 	"goToSearch" => "Zur Beratersuche",
-	"terms" => "Wir werden Ihre Daten ausschließlich zum Zweck der gezielten Kontaktaufnahme<br> durch die BayWa AG bzw. eine zu diesem Zweck beauftragte Drittfirma (Agentur) speichern und verarbeiten.<br> Eine anderweitige Nutzung, z. B. für Werbezwecke, findet nicht statt.",
+	"terms" => "Wir werden Ihre Daten ausschließlich zum Zweck der gezielten Kontaktaufnahme durch die BayWa AG<br> bzw. eine zu diesem Zweck beauftragte Drittfirma (Agentur) speichern und verarbeiten.<br> Eine anderweitige Nutzung, z. B. für Werbezwecke, findet nicht statt.",
 	"messageSent" => "Vielen Dank. Ihre Nachricht wurde versandt. Wir werden uns sobald wie möglich mit Ihnen in Kontakt setzen."
 
 

@@ -5058,11 +5058,16 @@ button.close {
 }
 .modal-header {
   min-height: 16.42857143px;
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  /*padding: 15px;
+  border-bottom: 1px solid #e5e5e5;*/
+  text-align: right;
 }
 .modal-header .close {
   margin-top: -2px;
+  font-size:5vw;
+  color:#01994e;
+  float:none;
+  opacity: 1;
 }
 .modal-title {
   margin: 0;

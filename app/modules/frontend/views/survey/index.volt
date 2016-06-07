@@ -7,7 +7,7 @@
 			</div>
 			<div class="headerWrap">
 				<h1>Quiz</h1>
-<h2>Werden Sie zum Rapsexperten</h2>
+<h2>Werden Sie zum Rapsexperten!</h2>
 			</div>
 			<div id="virtualKeyboard" class="virtualKeyboard"></div>
 			<div class='clearfix'></div>
