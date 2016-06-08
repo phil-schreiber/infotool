@@ -26,7 +26,7 @@ class IndexController extends ControllerBase
 				'bind' => array(
 					1 => $this->config['onspotusergroup']
 				),
-				'order' => 'last_name ASC'
+				'order' => 'last_name DESC'
 			));
 		$allUsers=Feusers::find(array(
 				'conditions' => 'deleted=0 AND usergroup > 1'

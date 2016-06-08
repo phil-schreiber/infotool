@@ -62,7 +62,7 @@
                                                                                     <a href='#search' >
 										<table style="width:100%;height:100%">
 											<tr>											
-												<td style="vertical-align:middle"><p>{{tr('button3')}}</p></td>											  
+												<td style="vertical-align:middle"><p style="font-size: 1.5vw;">{{tr('button3')}}</p></td>											  
 											</tr>
 										  </table>	
 										</a>
@@ -107,7 +107,7 @@
 			</div>
 			<div class="headerWrap">
 				<h1>Sorteninformationen</h1>
-				<h2>{{tr('listHeaderInfo')}}</h2>
+				<h2>Überblick über unsere Sorten.</h2>
 			</div>
 			
 			<div class='clearfix'></div>
@@ -446,7 +446,7 @@ Stärken:                                    </p>
 			</div>
 			<div class="headerWrap">
 				<h1>Ihre Rapsexperten</h1>
-				<h2>Wählen Sie Ihren Berater und senden Sie ihm eine Email</h2>
+				<h2>Berater wählen und direkt Kontakt per SMS aufnehmen.</h2>
 			</div>
 			<div id="virtualKeyboard2" class="virtualKeyboard"></div>
 			
