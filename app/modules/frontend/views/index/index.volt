@@ -161,8 +161,9 @@ Stärken:                                    </p>
                             </tr>						
                             <tr>
                                 <td style="vertical-align:bottom;">
-                                    <a data-animation="32" data-goto="2" class="pt-trigger">MÜLLER 24</a>
-                                    <a data-animation="32" data-goto="3" class="pt-trigger">NAIAD</a>
+                                    <a data-animation="32" data-goto="2" class="pt-trigger">MÜLLER 24*</a>
+                                    <a data-animation="32" data-goto="3" class="pt-trigger">NAIAD</a><br>
+                                    <span style="font-size:0.5vw;font-weight:normal">*MÜLLER 24 ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke, die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span>
                                 </td>
                             </tr>
                         
@@ -170,7 +171,7 @@ Stärken:                                    </p>
                 </div>
                 <div class="pt-page pt-page-2"  style="display:block;">
                     <table class="maintable">                        
-                        <tr><td ><span style="font-size: 3vw;color: #01994e;font-weight:bold;">MÜLLER 24</span><br><span style="font-size: 1em;color:#4d4d4d">Der Ölmeister</span></td>
+                        <tr><td ><span style="font-size: 3vw;color: #01994e;font-weight:bold;">MÜLLER 24*</span><br><span style="font-size: 1em;color:#4d4d4d">Der Ölmeister</span></td>
                         <td rowspan="3">
                                     <table>
                                         <tr>
@@ -202,7 +203,7 @@ Stärken:                                    </p>
                                         <li>Sehr gute Druschfähigkeit</li>
 
                                     </ul>
-                                    <p><span style="font-size:0.8em">*MÜLLER 24 ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke,<br> die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span></p>
+                                    <p><span style="font-size:0.8em">*MÜLLER 24* ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke,<br> die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span></p>
                                    
                                     
                                 </td>
@@ -253,7 +254,8 @@ Stärken:                                    </p>
                             <tr>
                                 <td  style="vertical-align:bottom">
                                     <a class="pt-trigger" data-animation="33" data-goto="-2">MÜLLER24</a>
-                                    <a data-animation="32" data-goto="1" class="pt-trigger">ARCHIPEL</a>
+                                    <a data-animation="32" data-goto="1" class="pt-trigger">ARCHIPEL</a><br>
+                                    <span style="font-size:0.5vw;font-weight:normal">*MÜLLER 24 ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke, die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span>
                                 </td>
                             </tr>
                         

@@ -1,18 +1,18 @@
-[
+    [
     
         {
             "title":"Welche Rapssorte wird die Schwerpunktsorte 2016 im Exklusivsortiment der BayWa?",
             "answers":[
                     {
-                        "title":"Archipel",
+                        "title":"ARCHIPEL",
                         "truefalse" : true
                     },
                     {
-                        "title":"Vision",
+                        "title":"VISION",
                         "truefalse" : false
                     },
                     {
-                        "title":"Planterra",
+                        "title":"MINOTAUR",
                         "truefalse" : false
                     },
                     {
@@ -26,26 +26,26 @@
             "title":"Welche neue Rapssorte wird im BayWa Rapskatalog 2016 neu vorgestellt?",
             "answers":[
                     {
-                        "title":"Naiad",
+                        "title":"NAIAD",
                         "truefalse" : true
                     },
                     {
-                        "title":"Müller 24",
+                        "title":"MÜLLER 24* <span style=\"font-size:0.5vw;font-weight:normal\">*MÜLLER 24 ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke, die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span>",
                         "truefalse" : false
                     },
                     {
-                        "title":"Vision",
+                        "title":"VISION",
                         "truefalse" : false
                     },
                     {
-                        "title":"Sepp 114",
+                        "title":"SEPP 114",
                         "truefalse" : false
                     }
                 ],
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Welchen spitzen Kornertrag hat ARCHIPEL im Bundessortenversuch 2015 in Bayern erzielt?",
+            "title":"Welchen Spitzen-Kornertrag hat ARCHIPEL im Bundessortenversuch 2015 in Bayern erzielt?",
             "answers":[
                     {
                         "title":"108%",
@@ -89,7 +89,7 @@
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Mit welchem Qualitätsmerkmal kann Müller24 punkten?",
+            "title":"Mit welchem Qualitätsmerkmal kann MÜLLER 24* punkten?<br><span style=\"font-size:0.5vw;font-weight:normal\">*MÜLLER 24 ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke, die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span>",
             "answers":[
                     {
                         "title":"Ölgehalt",
@@ -114,19 +114,19 @@
             "title":"Welche der drei im Rapssortenkatalog beworbene Sorte ist für eine frühe Aussaat geeignet?",
             "answers":[
                     {
-                        "title":"Müller 24",
+                        "title":"MÜLLER 24*<br><span style=\"font-size:0.5vw;font-weight:normal\">*MÜLLER 24 ist eine beim Deutschen und Europäischen Patent- und Markenamt eingetragene Wortmarke, die Sorte wurde offiziell unter dem Namen PR46W24 zugelassen.</span>",
                         "truefalse" : true
                     },
                     {
-                        "title":"Archipel",
+                        "title":"ARCHIPEL",
                         "truefalse" : false
                     },
                     {
-                        "title":"Naiad",
+                        "title":"NAIAD",
                         "truefalse" : false
                     },
                     {
-                        "title":"Vision",
+                        "title":"VISION",
                         "truefalse" : false
                     }
                 ],
@@ -529,7 +529,7 @@
             "explanations":["Explanation 1"]
         },        
         {
-            "title":"Vor wie vielen Jahren ist die Raps entstanden?",
+            "title":"Vor wie vielen Jahren ist Raps entstanden?",
             "answers":[
                     {
                         "title":"vor 1.500 - 1800 Jahren",
@@ -551,22 +551,22 @@
             "explanations":["Explanation 1"]
         },
         {
-            "title":"Wie lange braucht der Raps zum Auflaufen?",
+            "title":"Welche Temperatursumme braucht der Raps zum Auflaufen?",
             "answers":[
                     {
-                        "title":"80 - 120 °C-Tage",
+                        "title":"80 - 120 °C",
                         "truefalse" : true
                     },
                     {
-                        "title":"unter 50 °C-Tage",
+                        "title":"unter 50 °C",
                         "truefalse" : false
                     },
                     {
-                        "title":"150 - 250 °C-Tage",
+                        "title":"150 - 250 °C",
                         "truefalse" : false
                     },
                     {
-                        "title":"40 - 80 °C-Tage",
+                        "title":"40 - 80 °C",
                         "truefalse" : false
                     }
                 ],
@@ -620,7 +620,7 @@
             "title":"Wie wird Kohlhernie übertragen?",
             "answers":[
                     {
-                        "title":"durch an Maschinen, Reifen und Schuhen anhaftende, verseuchte Erde",
+                        "title":"durch an Maschinen, Reifen und Schuhen haftende, verseuchte Erde",
                         "truefalse" : true
                     },
                     {
