@@ -494,7 +494,7 @@ function smstextBox(){
     
     
 		var getQuestions=function(callback){
-                    $.getJSON('/infotool/public/quiz.json',callback);
+                    $.getJSON('/agrar-messetool/public/quiz.json',callback);
                 };
                 var writeQuestions=function(data){
                         

@@ -21,24 +21,28 @@
                                     <table class="formTable" style="min-height:90%;">
 						<tr>
 							
-							<td>
+							<td style="text-align: left;padding-left: 30px;">
 								<div class="alignLeft">
 								<label>Name*</label><br>
 								<input type="text" name="name"><br><br>
 								</div>
 
 							</td>
-                                                </tr>
-                                                <tr>
-							<td>
+                                              
+                                                
+							<td style="text-align: left;padding-left: 30px;">
 								<div class="alignLeft">
 								<label>Email*</label><br>
 								<input type="text" name="email"><br><br>
 								</div>
 							</td>
-							
-						</tr>
+                                                </tr>	
 						
+						<tr>
+							<td colspan="2" style="text-align: left; padding-left: 30px;">								
+                                                            <input type="checkbox" name="terms" id="terms2"> <label for="terms" class="terms">Hiermit erkläre ich mich einverstanden, dass meine Daten ausschließlich zum Zweck der gezielten Kontaktaufnahme durch die BayWa AG<br> bzw. eine zu diesem Zweck beauftragte Drittfirma (Agentur) gespeichert und verarbeitet werden.<br> Ich habe die <a href="#" style="font-size: 1em;" data-toggle="modal" data-target="#dataprotection"> Hinweise zum Datenschutz</a> gelesen und bin mit der Speicherung meiner Daten einverstanden. </label>								
+							</td>
+						</tr>
 						
 						
 					</table>
@@ -70,3 +74,19 @@
 	</section>
 
 <div id="virtualKeyboardWrapper"></div>
+ <div class="modal fade" id="dataprotection" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+             <div class="modal-dialog" role="document">
+    <div class="modal-content">      
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        
+        
+      </div>
+      <div class="modal-body">
+          <iframe src="{{baseurl}}public/dataprotection.html" style="width:100%;border:none;height:80vh;">
+          </iframe>
+      </div>
+      
+    </div>
+  </div>
+</div>   

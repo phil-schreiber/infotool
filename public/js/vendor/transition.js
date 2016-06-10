@@ -73,8 +73,12 @@ var PageTransitions = (function () {
 				}
 			}else if($(this).attr('id')=='quizTrigger'){
                             if(formIsValid(['name','email'])){
+                                if(termsAgreed()){
                                 $pageTrigger = $(this);
                                 quiz($pageTrigger);
+                                }else{
+                                    alert("Sie müssen der Datenverarbeitung zustimmen.")
+                                }
                             }else{
                                 alert('Bitte füllen Sie die vorgegebenen Felder aus');
                             }
