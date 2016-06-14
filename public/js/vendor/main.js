@@ -478,10 +478,12 @@ function smstextBox(){
                   
                   var params=jQuery('form[name="question_'+counter+'"]').serialize();
                   var rightWrong=parseInt(jQuery('form[name="question_'+counter+'"] input:checked').val());
+                  if(isNaN(rightWrong)){
+                      rightWrong=0;
+                  }
                   result+=rightWrong;
                   ajaxIt("survey","create",params+'&sesid='+sesid,dummyEmpty);
-                  console.log(rightWrong);
-                  console.log(jQuery(this));
+                  
                   if(rightWrong){
                       jQuery('form[name="question_'+counter+'"] input:checked').parent().addClass('green');
                   }else{
@@ -494,7 +496,7 @@ function smstextBox(){
     
     
 		var getQuestions=function(callback){
-                    $.getJSON('/agrar-messetool/public/quiz.json',callback);
+                    $.getJSON('/public/quiz.json',callback);
                 };
                 var writeQuestions=function(data){
                         
