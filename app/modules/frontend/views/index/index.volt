@@ -416,7 +416,7 @@ Stärken:                                    </p>
 								<td>
 									<h3 style="margin-left">{{tr('messageSent')}}</h3>						
 						<br><br>
-						<a href="http://infotool.denkfabrik-group.com/" class="navButton"  id="consultantNotFound"><span class="icon i_right_primary"></span><span class="btn_label">{{tr('backHome')}}</span></a>
+						<a href="http://infotool.denkfabrik-entwicklung.de/" class="navButton"  id="consultantNotFound"><span class="icon i_right_primary"></span><span class="btn_label">{{tr('backHome')}}</span></a>
 								</td>
 							</tr>						
 							

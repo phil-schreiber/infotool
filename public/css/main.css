@@ -1974,6 +1974,7 @@ section#start{
 .flip-container, .front, .back {
 	width: 250px;
 	height: 250px;
+        background-size:contain;
 }
 .flip-container p{
 	font-size:2vw;
