@@ -502,7 +502,7 @@ function smstextBox(){
     
     
 		var getQuestions=function(callback){
-                    $.getJSON('/public/quiz.json',callback);
+                    $.getJSON('/infotool/public/quiz.json',callback);
                 };
                 var writeQuestions=function(data){
                         
